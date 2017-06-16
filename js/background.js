@@ -6,7 +6,7 @@ function checkImgSrcArray(imgSrcArray) {
     var imgNumArray = [];
     var re = /\/(\d+)\.jpg$/;
     for (var imgSrc of imgSrcArray) {
-        var imgNum = Number(imgSrc.match(re)[1]);
+        var imgNum = Number(imgSrc.src.match(re)[1]);
         imgNumArray.push(imgNum);
     }
     console.log(imgNumArray);

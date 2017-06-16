@@ -53,7 +53,7 @@ var Task = {
         var pageInfoObj = {};
         for (var i = 0; i < this.imgElementArray.length; i++) {
             console.log("scan to " + this.imgElementArray[i].src);
-            imgSrcArray.push(this.imgElementArray[i].src);
+            imgSrcArray.push({src:this.imgElementArray[i].src, ref:document.URL});
         }
         pageInfoObj.imgSrcArray = imgSrcArray;
         pageInfoObj.title = this.getCurrentTitle();
