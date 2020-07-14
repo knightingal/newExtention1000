@@ -12,14 +12,19 @@
     },
     "content_scripts": [
         {
-            "matches":["http://www.renti1000.com/*"],
+            "matches":["*://*/*"],
             "js":["content_script.js"],
             "run_at":"document_end"
         }
     ],
-    "manifest_version": 2,
+    "browser_specific_settings": {
+        "gecko": {
+          "id": "yujianming1985@126.com"
+        }
+      },
     "permissions": [
         "tabs", "http://*/"
-    ]
+    ],
+    "manifest_version": 2
 
 }
